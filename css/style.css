@@ -422,6 +422,10 @@ a {
     text-transform: uppercase;
     letter-spacing: var(--letterSpacing);
 }
+.form-btn {
+    border: none;
+    float: right;
+}
 @media screen and (min-width: 992px) {
     .contact-info,
     .contact-form {
