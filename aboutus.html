@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tea Station</title>
+
+        <!-- Fontawesome CDN -->
+        <script
+            src="https://kit.fontawesome.com/3436386b3d.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- Navbar Javascript -->
+    </head>
+    <body>
+        <!-- Nav Button -->
+        <span class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+        </span>
+        <!-- Navbar -->
+        <nav class="navbar" id="navbar">
+            <div class="navbar-header">
+                <span class="nav-close" id="nav-close"
+                    ><i class="fas fa-times"></i
+                ></span>
+            </div>
+            <ul class="nav-items">
+                <li><a href="index.html" class="nav-link">home</a></li>
+                <li><a href="skills.html" class="nav-link">skills</a></li>
+                <li><a href="products.html" class="nav-link">products</a></li>
+                <li><a href="aboutus.html" class="nav-link">about us</a></li>
+            </ul>
+        </nav>
+        <!-- End of Navbar -->
+        <!-- Header -->
+        <header class="header">
+            <div class="banner">
+                <h3 class="banner-subtitle">over one hundred flavors of tea</h3>
+                <h1 class="banner-title">specially crafted tea</h1>
+                <a href="skills.html" class="banner-btn">explore</a>
+            </div>
+        </header>
+        <!-- End of Header -->
+        <!-- Content Divider -->
+        <hr class="content-divider" />
+        <!-- About Section -->
+        <section class="about">
+            <div class="section-center clearfix">
+                <!-- first coloum -->
+                <article class="about-img">
+                    <div class="about-pic-container">
+                        <img
+                            class="about-pic"
+                            src="./images/about-bcg.jpeg"
+                            alt="tea keatle"
+                        />
+                    </div>
+                </article>
+                <!-- second coloum -->
+                <article class="about-info">
+                    <!-- section title -->
+                    <div>
+                        <h3 class="section-subtitle">about our</h3>
+                        <h2 class="section-title">tea station</h2>
+                    </div>
+                    <!-- end of section title -->
+                    <p class="about-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Vel, nulla.
+                    </p>
+                    <p class="about-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Vel, nulla.
+                    </p>
+                    <a href="about.html" class="main-btn">learn more</a>
+                </article>
+            </div>
+        </section>
+        <!-- End of About Section -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="section-center">
+                <div class="social-icons">
+                    <!-- Social Icons -->
+                    <a href="#" class="social-icon"
+                        ><i class="fab fa-facebook"></i
+                    ></a>
+                    <a href="#" class="social-icon"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="#" class="social-icon"
+                        ><i class="fab fa-twitter"></i
+                    ></a>
+                    <!-- End of Social Icons -->
+                </div>
+                <p class="footer-text">
+                    &copy <span class="text-primary">tea station</span>&nbsp;
+                    all rights reserved
+                </p>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+        <script>
+            const navBtn = document.getElementById("nav-btn");
+            const navBar = document.getElementById("navbar");
+            const navClose = document.getElementById("nav-close");
+
+            navBtn.addEventListener("click", () => {
+                navBar.classList.add("navShow");
+            });
+            navClose.addEventListener("click", () => {
+                navBar.classList.remove("navShow");
+            });
+        </script>
+    </body>
+</html>
