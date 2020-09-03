@@ -61,12 +61,11 @@ a {
 /* Nav Button */
 .nav-btn {
     position: fixed;
-    top: 0;
-    left: 0;
+    right: 0;
     z-index: 1;
     font-size: 2rem;
     margin-top: 1rem;
-    margin-left: 1.3rem;
+    margin-right: 1.3rem;
     color: var(--primaryColor);
     animation: bounce 2s ease-in-out infinite;
     cursor: pointer;
@@ -94,14 +93,20 @@ a {
     padding-top: 1rem;
     padding-left: 2rem;
     transition: var(--mainTransition);
-    transform: translateX(-100%);
+    transform: translateX(100%);
 }
 .nav-close {
+    color: var(--mainDark);
     font-size: 3rem;
+    margin-right: 1.3rem;
+    float: right;
     cursor: pointer;
 }
 .nav-items {
+    text-align: right;
     list-style-type: none;
+    float: right;
+    margin-right: 1.3rem;
 }
 .nav-link {
     display: block;
@@ -119,8 +124,7 @@ a {
 }
 @media screen and (min-width: 768px) {
     .navbar {
-        width: 30vw;
-        max-width: 20rem;
+        left: 85%;
     }
 }
 /* Header */
